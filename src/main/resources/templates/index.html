@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>开始使用layui</title>
+    <link rel="stylesheet" href="layui/css/layui.css">
+</head>
+<body>
+<div class="layui-layout layui-layout-admin">
+
+
+
+    <div class="layui-header header header-demo" summer>
+        <div class="layui-main">
+            <div class="layui-form component" lay-filter="LAY-site-header-component"></div>
+            <ul class="layui-nav">
+                <li class="layui-nav-item ">
+                    <a href="/doc/">文档<!-- <span class="layui-badge-dot"></span> --></a>
+                </li>
+                <li class="layui-nav-item layui-this">
+                    <a href="/demo/">示例<!--  --></a>
+                </li>
+
+
+
+
+                <li class="layui-nav-item layui-hide-xs">
+                    <a href="//fly.layui.com/" target="_blank">社区</a>
+                </li>
+
+                <li class="layui-nav-item">
+                    <a href="javascript:;"><!--<span class="layui-badge-dot" style="margin: -5px 0 0 -15px;"></span>-->周边</a>
+                    <dl class="layui-nav-child">
+                        <dd lay-unselect>
+                            <a href="//fly.layui.com/extend/" target="_blank">扩展组件</a>
+                        </dd>
+                        <dd lay-unselect>
+                            <a href="//fly.layui.com/store/" target="_blank">模板市场 <span class="layui-badge-dot"></span></a>
+                            <hr>
+                        </dd>
+
+                        <dd class="layui-hide-sm layui-show-xs" lay-unselect>
+                            <a href="//fly.layui.com/" target="_blank">社区交流</a>
+                            <hr>
+                        </dd>
+                        <dd lay-unselect><a href="/admin/" target="_blank">后台模板</a></dd>
+                        <dd lay-unselect><a href="/layim/" target="_blank">即时聊天</a><hr></dd>
+
+                        <dd lay-unselect><a href="/alone.html" target="_blank" lay-unselect>独立组件</a></dd>
+                        <dd lay-unselect><a href="https://fly.layui.com/jie/24209/" target="_blank">Axure 组件</a></dd>
+                    </dl>
+                </li>
+
+                <li class="layui-nav-item layui-hide-xs" lay-unselect>
+                    <a href="/admin/">后台模板<span class="layui-badge-dot" style="margin-top: -5px;"></span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+    <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <div class="layui-side layui-bg-black">
+        <div class="layui-side-scroll">
+
+            <ul class="layui-nav layui-nav-tree site-demo-nav">
+
+                <li class="layui-nav-item layui-nav-itemed">
+                    <a class="javascript:;" href="javascript:;">开发工具</a>
+                    <dl class="layui-nav-child">
+                        <dd>
+                            <a href="/demo/">调试预览</a>
+                        </dd>
+                    </dl>
+                </li>
+
+                <li class="layui-nav-item layui-nav-itemed">
+                    <a class="javascript:;" href="javascript:;">布局</a>
+                    <dl class="layui-nav-child">
+                        <dd class="">
+                            <a href="/demo/grid.html">栅格</a>
+                        </dd>
+                        <dd class="">
+                            <a href="/demo/admin.html">后台布局</a>
+                        </dd>
+                    </dl>
+                </li>
+
+                <li class="layui-nav-item layui-nav-itemed">
+                    <a class="javascript:;" href="javascript:;">基本元素</a>
+                    <dl class="layui-nav-child">
+                        <dd class="">
+                            <a href="/demo/button.html">按钮</a>
+                        </dd>
+                        <dd class="">
+                            <a href="/demo/form.html">表单</a>
+                        </dd>
+                        <dd class="">
+                            <a href="/demo/nav.html">导航/面包屑</a>
+                        </dd>
+                        <dd class="">
+                            <a href="/demo/tab.html">选项卡</a>
+                        </dd>
+                        <dd class="">
+                            <a href="/demo/progress.html">进度条</a>
+                        </dd>
+                        <dd class="">
+                            <a href="/demo/panel.html">面板</a>
+                        </dd>
+                        <dd class="">
+                            <a href="/demo/badge.html">徽章</a>
+                        </dd>
+                        <dd class="">
+                            <a href="/demo/timeline.html">时间线</a>
+                        </dd>
+                        <dd class="">
+                            <a href="/demo/table-element.html">静态表格</a>
+                        </dd>
+                        <dd class="">
+                            <a href="/demo/anim.html">动画</a>
+                        </dd>
+                        <dd class="">
+                            <a href="/demo/auxiliar.html">辅助元素</a>
+                        </dd>
+                    </dl>
+                </li>
+
+                <li class="layui-nav-item layui-nav-itemed">
+                    <a class="javascript:;" href="javascript:;">组件示例</a>
+                    <dl class="layui-nav-child">
+                        <dd class="">
+                            <a href="/demo/layer.html">
+                                弹出层
+                            </a>
+                        </dd>
+                        <dd class="">
+                            <a href="/demo/laydate.html">
+                                日期与时间选择
+                            </a>
+                        </dd>
+                        <dd class="">
+                            <a href="/demo/layim.html">
+                                即时通讯
+                            </a>
+                        </dd>
+                        <dd class="">
+                            <a href="/demo/table.html">
+                                数据表格
+                            </a>
+                        </dd>
+                        <dd class="">
+                            <a href="/demo/laypage.html">
+                                分页
+                            </a>
+                        </dd>
+                        <dd class="">
+                            <a href="/demo/upload.html">
+                                文件上传
+                            </a>
+                        </dd>
+                        <dd class="">
+                            <a href="/demo/transfer.html">
+                                穿梭框
+                            </a>
+                        </dd>
+
+                        <dd class="">
+                            <a href="/demo/tree.html">
+                                树形组件
+                            </a>
+                        </dd>
+                        <dd class="">
+                            <a href="/demo/colorpicker.html">
+                                颜色选择器
+                            </a>
+                        </dd>
+                        <dd class="">
+                            <a href="/demo/slider.html">
+                                滑块
+                            </a>
+                        </dd>
+                        <dd class="">
+                            <a href="/demo/rate.html">
+                                评分
+                            </a>
+                        </dd>
+                        <dd class="">
+                            <a href="/demo/carousel.html">
+                                轮播
+                            </a>
+                        </dd>
+                        <dd class="">
+                            <a href="/demo/laytpl.html">
+                                模板引擎
+                            </a>
+                        </dd>
+                        <dd class="">
+                            <a href="/demo/flow.html">
+                                流加载
+                            </a>
+                        </dd>
+                        <dd class="">
+                            <a href="/demo/util.html">
+                                工具集
+                            </a>
+                        </dd>
+                        <dd class="">
+                            <a href="/demo/code.html">
+                                代码修饰器
+                            </a>
+                        </dd>
+                    </dl>
+                </li>
+
+                <li class="layui-nav-item" style="height: 30px; text-align: center"></li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="layui-body site-demo">
+        <form id="LAY_demoForm" target="LAY_demo" method="post">
+            <div class="site-demo-editor">
+                <div class="site-demo-area">
+        <textarea id="LAY_editor" spellcheck="false" placeholder="在此处输入代码">
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>layui在线调试</title>
+  <link rel="stylesheet" href="//res.layui.com/layui/dist/css/layui.css?t=1560414887155" media="all">
+  <style>
+    body{margin: 10px;}
+    .demo-carousel{height: 200px; line-height: 200px; text-align: center;}
+  </style>
+</head>
+<body>
+
+<table class="layui-hide" id="demo" lay-filter="test"></table>
+
+<script type="text/html" id="barDemo">
+  <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">查看</a>
+  <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+  <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+</script>
+
+<div class="layui-tab layui-tab-brief" lay-filter="demo">
+  <ul class="layui-tab-title">
+    <li class="layui-this">演示说明</li>
+    <li>日期</li>
+    <li>分页</li>
+    <li>上传</li>
+    <li>滑块</li>
+  </ul>
+  <div class="layui-tab-content">
+    <div class="layui-tab-item layui-show">
+
+      <div class="layui-carousel" id="test1">
+        <div carousel-item>
+          <div><p class="layui-bg-green demo-carousel">在这里，你将以最直观的形式体验 layui！</p></div>
+          <div><p class="layui-bg-red demo-carousel">在编辑器中可以执行 layui 相关的一切代码</p></div>
+          <div><p class="layui-bg-blue demo-carousel">你也可以点击左侧导航针对性地试验我们提供的示例</p></div>
+          <div><p class="layui-bg-orange demo-carousel">如果最左侧的导航的高度超出了你的屏幕</p></div>
+          <div><p class="layui-bg-cyan demo-carousel">你可以将鼠标移入导航区域，然后滑动鼠标滚轮即可</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="layui-tab-item">
+      <div id="laydateDemo"></div>
+    </div>
+    <div class="layui-tab-item">
+      <div id="pageDemo"></div>
+    </div>
+    <div class="layui-tab-item">
+      <div class="layui-upload-drag" id="uploadDemo">
+        <i class="layui-icon">&#xe67c;</i>
+        <p>点击上传，或将文件拖拽到此处</p>
+      </div>
+    </div>
+    <div class="layui-tab-item">
+      <div id="sliderDemo" style="margin: 50px 20px;"></div>
+    </div>
+  </div>
+</div>
+
+<blockquote class="layui-elem-quote layui-quote-nm layui-hide" id="footer">layui {{ layui.v }} 提供强力驱动</blockquote>
+
+
+<script src="//res.layui.com/layui/dist/layui.js?t=1560414887155"></script>
+<script>
+layui.config({
+    version: '1560414887155' //为了更新 js 缓存，可忽略
+});
+
+layui.use(['laydate', 'laypage', 'layer', 'table', 'carousel', 'upload', 'element', 'slider'], function(){
+    var laydate = layui.laydate //日期
+        ,laypage = layui.laypage //分页
+        ,layer = layui.layer //弹层
+        ,table = layui.table //表格
+        ,carousel = layui.carousel //轮播
+        ,upload = layui.upload //上传
+        ,element = layui.element //元素操作
+        ,slider = layui.slider //滑块
+
+    //向世界问个好
+    layer.msg('Hello World');
+
+    //监听Tab切换
+    element.on('tab(demo)', function(data){
+        layer.tips('切换了 '+ data.index +'：'+ this.innerHTML, this, {
+            tips: 1
+        });
+    });
+
+    //执行一个 table 实例
+    table.render({
+        elem: '#demo'
+        ,height: 420
+        ,url: '/demo/table/user/' //数据接口
+        ,title: '用户表'
+        ,page: true //开启分页
+        ,toolbar: 'default' //开启工具栏，此处显示默认图标，可以自定义模板，详见文档
+        ,totalRow: true //开启合计行
+        ,cols: [[ //表头
+            {type: 'checkbox', fixed: 'left'}
+            ,{field: 'id', title: 'ID', width:80, sort: true, fixed: 'left', totalRowText: '合计：'}
+            ,{field: 'username', title: '用户名', width:80}
+            ,{field: 'experience', title: '积分', width: 90, sort: true, totalRow: true}
+            ,{field: 'sex', title: '性别', width:80, sort: true}
+            ,{field: 'score', title: '评分', width: 80, sort: true, totalRow: true}
+            ,{field: 'city', title: '城市', width:150}
+            ,{field: 'sign', title: '签名', width: 200}
+            ,{field: 'classify', title: '职业', width: 100}
+            ,{field: 'wealth', title: '财富', width: 135, sort: true, totalRow: true}
+            ,{fixed: 'right', width: 165, align:'center', toolbar: '#barDemo'}
+        ]]
+    });
+
+    //监听头工具栏事件
+    table.on('toolbar(test)', function(obj){
+        var checkStatus = table.checkStatus(obj.config.id)
+            ,data = checkStatus.data; //获取选中的数据
+        switch(obj.event){
+            case 'add':
+                layer.msg('添加');
+                break;
+            case 'update':
+                if(data.length === 0){
+                    layer.msg('请选择一行');
+                } else if(data.length > 1){
+                    layer.msg('只能同时编辑一个');
+                } else {
+                    layer.alert('编辑 [id]：'+ checkStatus.data[0].id);
+                }
+                break;
+            case 'delete':
+                if(data.length === 0){
+                    layer.msg('请选择一行');
+                } else {
+                    layer.msg('删除');
+                }
+                break;
+        };
+    });
+
+    //监听行工具事件
+    table.on('tool(test)', function(obj){ //注：tool 是工具条事件名，test 是 table 原始容器的属性 lay-filter="对应的值"
+        var data = obj.data //获得当前行数据
+            ,layEvent = obj.event; //获得 lay-event 对应的值
+        if(layEvent === 'detail'){
+            layer.msg('查看操作');
+        } else if(layEvent === 'del'){
+            layer.confirm('真的删除行么', function(index){
+                obj.del(); //删除对应行（tr）的DOM结构
+                layer.close(index);
+                //向服务端发送删除指令
+            });
+        } else if(layEvent === 'edit'){
+            layer.msg('编辑操作');
+        }
+    });
+
+    //执行一个轮播实例
+    carousel.render({
+        elem: '#test1'
+        ,width: '100%' //设置容器宽度
+        ,height: 200
+        ,arrow: 'none' //不显示箭头
+        ,anim: 'fade' //切换动画方式
+    });
+
+    //将日期直接嵌套在指定容器中
+    var dateIns = laydate.render({
+        elem: '#laydateDemo'
+        ,position: 'static'
+        ,calendar: true //是否开启公历重要节日
+        ,mark: { //标记重要日子
+            '0-10-14': '生日'
+            ,'2018-08-28': '新版'
+            ,'2018-10-08': '神秘'
+        }
+        ,done: function(value, date, endDate){
+            if(date.year == 2017 && date.month == 11 && date.date == 30){
+                dateIns.hint('一不小心就月底了呢');
+            }
+        }
+        ,change: function(value, date, endDate){
+            layer.msg(value)
+        }
+    });
+
+    //分页
+    laypage.render({
+        elem: 'pageDemo' //分页容器的id
+        ,count: 100 //总页数
+        ,skin: '#1E9FFF' //自定义选中色值
+        //,skip: true //开启跳页
+        ,jump: function(obj, first){
+            if(!first){
+                layer.msg('第'+ obj.curr +'页', {offset: 'b'});
+            }
+        }
+    });
+
+    //上传
+    upload.render({
+        elem: '#uploadDemo'
+        ,url: '' //上传接口
+        ,done: function(res){
+            console.log(res)
+        }
+    });
+
+    slider.render({
+        elem: '#sliderDemo'
+        ,input: true //输入框
+    });
+
+    //底部信息
+    var footerTpl = lay('#footer')[0].innerHTML;
+    lay('#footer').html(layui.laytpl(footerTpl).render({}))
+        .removeClass('layui-hide');
+});
+</script>
+</body>
+</html>
+        </textarea>
+                    <input type="hidden" name="html" id="LAY_demoCodes">
+                </div>
+                <div class="site-demo-btn">
+                    <button type="button" class="layui-btn" id="LAY_demo_run">运行代码</button>
+                </div>
+            </div>
+        </form>
+        <div class="site-demo-result">
+            <iframe frameborder="0" id="LAY_demo" name="LAY_demo"></iframe>
+        </div>
+    </div>
+    <div class="layui-footer footer footer-demo">
+        <div class="layui-main">
+            <p>&copy; 2019 <a href="/">layui.com</a> MIT license</p>
+            <p>
+                <a href="http://fly.layui.com/case/2019/" target="_blank">案例</a>
+                <a href="http://fly.layui.com/jie/3147/" target="_blank">支持</a>
+                <!--<a href="javascript:;" site-event="contactInfo">联系</a>-->
+                <a href="https://github.com/sentsin/layui/" target="_blank" rel="nofollow">GitHub</a>
+                <a href="https://gitee.com/sentsin/layui" target="_blank" rel="nofollow">码云</a>
+                <a href="http://fly.layui.com/jie/2461/" target="_blank">公众号</a>
+                <a href="http://www.miitbeian.gov.cn/" target="_blank" rel="nofollow">赣ICP备13006272号-2</a>
+            </p>
+            <p class="site-union">
+                <a href="https://console.upyun.com/register/?invite=SJ0wu6g2-" target="_blank" rel="nofollow" upyun><img src="//res.layui.com/static/images/other/upyun.png?t=1" alt="upyun"></a>
+                <span>提供云加速赞助</span>
+            </p>
+        </div>
+    </div>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <div class="site-tree-mobile layui-hide">
+        <i class="layui-icon">&#xe602;</i>
+    </div>
+    <div class="site-mobile-shade"></div>
+    <script src="//res.layui.com/layui/dist/layui.js?t=1560414887155" charset="utf-8"></script>
+    <script>
+        window.global = {
+            pageType: 'demo'
+            ,preview: function(){
+                var preview = document.getElementById('LAY_preview');
+                return preview ? preview.innerHTML : '';
+            }()
+        };
+        layui.config({
+            base: '//res.layui.com/static/lay/modules/layui/'
+            ,version: '1560414887155'
+        }).use('global');
+    </script>
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?d214947968792b839fd669a4decaaffc";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+</div>
+</body>
+</html>
